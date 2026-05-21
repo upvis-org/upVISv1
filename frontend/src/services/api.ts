@@ -1,7 +1,8 @@
 import ky, { HTTPError } from 'ky';
 
 const api = ky.create({
-  prefixUrl: "http://localhost:5001/api/v1",
+  prefixUrl:
+    import.meta.env.VITE_API_BASE_URL || "http://localhost:5001/api/v1",
   credentials: "include",
 });
 
