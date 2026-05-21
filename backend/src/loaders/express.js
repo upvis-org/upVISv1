@@ -44,7 +44,10 @@ module.exports = ({ app }) => {
     // The Magic Middlewares
     // app.use(helmet()); // Security headers
     app.use(cors({
-        origin: process.env.FRONTEND_URL,
+        origin: [
+            "http://localhost:5173",
+            "https://up-vi-sv1-4t3fct7si-andys-projects-46ddc37a.vercel.app"
+        ],
         credentials: true,
     }));
     app.use(compression()); // Compress responses
@@ -69,7 +72,7 @@ module.exports = ({ app }) => {
             cookie: {
                 httpOnly: true,
                 secure: false,
-                sameSite: "lax",
+                sameSite: "none",
                 maxAge: 1000 * 60 * 60 * 24,
             },
         }),
