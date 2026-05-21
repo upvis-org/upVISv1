@@ -46,7 +46,7 @@ module.exports = ({ app }) => {
     app.use(cors({
         origin: [
             "http://localhost:5173",
-            "https://up-vi-sv1-4t3fct7si-andys-projects-46ddc37a.vercel.app"
+            "up-vi-sv1.vercel.app"
         ],
         credentials: true,
     }));
