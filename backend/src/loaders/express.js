@@ -43,12 +43,10 @@ module.exports = ({ app }) => {
 
     // The Magic Middlewares
     // app.use(helmet()); // Security headers
-    app.use(
-        cors({
-            origin: "http://localhost:5173",
-            credentials: true, // for cookies!
-        }),
-    );
+    app.use(cors({
+        origin: process.env.FRONTEND_URL,
+        credentials: true,
+    }));
     app.use(compression()); // Compress responses
     app.use(morgan("dev")); // HTTP request logger
 
