@@ -1,11 +1,7 @@
 const dotenv = require("dotenv");
 
-// Load env
-const result = dotenv.config();
-
-if (result.error) {
-  throw new Error("⚠️ Couldn't find .env file ⚠️");
-}
+// Load environment variables
+dotenv.config();
 
 // Validate required variables
 const requiredEnvVars = ["MONGODB_URI", "SESSION_SECRET"];
@@ -26,7 +22,7 @@ module.exports = {
     secret: process.env.SESSION_SECRET,
     name: "upvis_sid",
   },
-  
+
   logs: {
     level: process.env.LOG_LEVEL || "silly",
   },
