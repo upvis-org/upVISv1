@@ -46,7 +46,7 @@ module.exports = ({ app }) => {
     app.use(cors({
         origin: [
             "http://localhost:5173",
-            "up-vi-sv1.vercel.app"
+            "https://up-vi-sv1.vercel.app"
         ],
         credentials: true,
     }));
@@ -71,7 +71,7 @@ module.exports = ({ app }) => {
             }),
             cookie: {
                 httpOnly: true,
-                secure: false,
+                secure: true,
                 sameSite: "none",
                 maxAge: 1000 * 60 * 60 * 24,
             },
