@@ -5,6 +5,7 @@
   "main": "src/app.js",
   "scripts": {
     "test": "jest --watchAll",
+    "start": "node src/app.js",
     "dev": "nodemon src/app.js",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",

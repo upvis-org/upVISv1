@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import { authService } from "../../services/api";
 import { LogOut } from "lucide-react";
 
 const LogoutButton = () => {
-    const navigate = useNavigate();
+    //const navigate = useNavigate();
     const [loading, setLoading] = useState(false);
 
     const handleLogout = async () => {

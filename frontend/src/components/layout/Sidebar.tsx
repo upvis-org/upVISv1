@@ -6,7 +6,7 @@ import {
   GraduationCap,
   ShieldCheck,
   ClipboardCheck,
-  Compass,
+  //Compass,
   Circle,
   Vote,
 } from "lucide-react";

@@ -18,10 +18,10 @@ const Dashboard = () => {
   const [entryType, setEntryType] = useState("donation");
 
   const [page, setPage] = useState(1);
-  const [search, setSearch] = useState("");
+  const [search] = useState("");
 
-  const [startDate, setStartDate] = useState("");
-  const [endDate, setEndDate] = useState("");
+  const [startDate] = useState("");
+  const [endDate] = useState("");
 
 
   // ── Confirm modal state ──────────────────────────────────────────────────
