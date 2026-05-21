@@ -1,6 +1,6 @@
 const bcrypt = require("bcryptjs");
 const Scholar = require("../../models/v1/Scholar");
-const Member = require("../../models/v1/members");
+const Member = require("../../models/v1/Members");
 
 class ApprovalEffectsService {
   async executeApprovalEffect(application) {

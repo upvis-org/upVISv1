@@ -2,7 +2,7 @@ const bcrypt = require("bcryptjs");
 
 const Scholar = require("../../models/v1/Scholar");
 
-const Member = require("../../models/v1/members");
+const Member = require("../../models/v1/Members");
 
 const register = async (fullname, contactNo, email, password, role) => {
   // =====================

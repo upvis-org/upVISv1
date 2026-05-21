@@ -1,7 +1,7 @@
 const bcrypt = require("bcryptjs");
 
 const Scholar = require("../../models/v1/Scholar");
-const Member = require("../../models/v1/members");
+const Member = require("../../models/v1/Members");
 
 const login = async ({ email, password }) => {
   let user = null;
