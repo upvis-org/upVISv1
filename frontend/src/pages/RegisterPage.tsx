@@ -111,7 +111,7 @@ const RegisterPage = () => {
         {/* Back button */}
         <div className="relative z-10 p-6 shrink-0">
           <button
-            onClick={() => navigate(-2)}
+            onClick={() => navigate("/")}
             className="flex items-center gap-1.5 text-slate-400 hover:text-slate-700 text-sm font-semibold transition-colors group"
           >
             <ChevronLeft size={16} className="group-hover:-translate-x-0.5 transition-transform" />

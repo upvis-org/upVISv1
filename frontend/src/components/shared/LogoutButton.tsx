@@ -1,11 +1,11 @@
 import { useState } from "react";
-//import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { authService } from "../../services/api";
 import { LogOut } from "lucide-react";
 
 const LogoutButton = () => {
-    //const navigate = useNavigate();
-    const [loading, setLoading] = useState(false);
+  useNavigate();
+  const [loading, setLoading] = useState(false);
 
     const handleLogout = async () => {
         setLoading(true);
@@ -28,7 +28,7 @@ const LogoutButton = () => {
             <span className="text-slate-400 group-hover:text-red-500 transition-colors">
                 <LogOut size={20} />
             </span>
-            <span className="text-base font-semibold font-serif tracking-wide text-slate-600 group-hover:text-red-600 transition-colors">
+            <span className="text-base font-semibold font-sans tracking-wide text-slate-600 group-hover:text-red-600 transition-colors">
                 {loading ? "Logging out..." : "Logout"}
             </span>
         </button>

@@ -141,10 +141,10 @@ const ApplicationsReviewPage = () => {
                 <ClipboardCheck size={30} />
               </div>
               <div>
-                <h1 className="text-4xl font-serif font-black text-slate-900">
+                <h1 className="text-4xl font-serif font-bold text-slate-900">
                   Review Applications
                 </h1>
-                <p className="mt-2 text-base text-slate-500 sm:text-lg">
+                <p className="mt-1 text-lg font-medium text-slate-500">
                   {counts.pending} pending applications are waiting for review.
                 </p>
               </div>
