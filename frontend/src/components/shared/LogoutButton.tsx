@@ -4,8 +4,8 @@ import { authService } from "../../services/api";
 import { LogOut } from "lucide-react";
 
 const LogoutButton = () => {
-    const navigate = useNavigate();
-    const [loading, setLoading] = useState(false);
+  useNavigate();
+  const [loading, setLoading] = useState(false);
 
     const handleLogout = async () => {
         setLoading(true);
